@@ -1,5 +1,31 @@
 # AURA release notes
 
+## 3.3.0
+
+The flagship release: per-stem analysis that actually works everywhere.
+
+- **AURA Link** - stems connect with zero routing, in every DAW. Keep AURA
+  on the master bus, add AURA to each stem track, set its mode to
+  "Send as: Kick" (Bass, Vocals, ...). The stem appears in the master
+  instance instantly - named, typed, live-metered. Most DAWs expose only a
+  single sidechain input to plug-ins, which made the old 8-input sidechain
+  design nearly impossible to use; Link replaces it with direct
+  instance-to-instance streaming inside the session (classic sidechains
+  still work where supported and show an SC badge).
+- Stem mapping overhaul: choosing a TYPE auto-fills the label (editable),
+  rows show live fast-peak levels and LINK/SC badges, and the 30 Hz UI
+  refresh no longer reverts dropdown selections mid-click.
+- Recommendation transparency: every Auto-Mix row shows the measured level
+  and the genre target it was compared against ("peak -6.2 dB > target
+  -14 dB"); averaged passes show "Listening..." until a stem has played
+  enough for a reliable read; estimates are labeled with a link hint.
+- Spectrum comparison: new GENRE TARGET dashed guide (the per-band level
+  the mix would sit at when matching the genre curve) and REF DELTA view
+  (mix minus reference around a zero line, +/-18 dB).
+- Windows text rendering fixed permanently (MSVC /utf-8): the garbled
+  em dashes/bullets/ellipses that appeared throughout the interface since
+  v1 are gone; remaining UI literals normalized.
+
 ## 3.2.0
 
 Deep-audit release: the full codebase was reviewed against the documentation

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.2.0",
+  "latestVersion": "3.3.0",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.2.0 is a deep-audit release: BS.1770-4 gated Integrated LUFS and 4x-oversampled True Peak, working MIDI fader recommendations (port: MixSense AI Control), correct 48/96 kHz analysis, Escape closes Deep Field, genre radar always shows your genre, cyan on-target band tints, drag-and-drop Full Track Reports, and many stability fixes.",
+  "releaseNotes": "AURA 3.3.0 introduces AURA Link: connect stems for deep per-stem analysis with zero routing, in every DAW - drop AURA on a stem track and pick 'Send as: Kick'. Plus a stem-mapping overhaul (auto-labels, live levels, source badges), honest recommendations showing measured level vs target, GENRE TARGET and REF DELTA spectrum views, and a permanent fix for the garbled characters on Windows.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

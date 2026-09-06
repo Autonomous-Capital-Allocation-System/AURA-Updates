@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "product": "AURA",
+  "latestVersion": "3.1.0",
+  "minimumSupportedVersion": "3.0.0",
+  "releaseNotes": "AURA 3.1.0 moves publishing to ACAS Tools, renames the plug-in binary from MixSenseAI to AURA (installers remove the old copy), and replaces the automatic startup version check with a privacy-first manual Check Updates button in Settings.",
+  "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
+  "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
+}

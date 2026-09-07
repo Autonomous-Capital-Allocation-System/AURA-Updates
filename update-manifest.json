@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.3.0",
+  "latestVersion": "3.4.0",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.3.0 introduces AURA Link: connect stems for deep per-stem analysis with zero routing, in every DAW - drop AURA on a stem track and pick 'Send as: Kick'. Plus a stem-mapping overhaul (auto-labels, live levels, source badges), honest recommendations showing measured level vs target, GENRE TARGET and REF DELTA spectrum views, and a permanent fix for the garbled characters on Windows.",
+  "releaseNotes": "AURA 3.4.0: Balance mode - mark a REF stem (your kick) and Auto-Mix advice anchors to it, respecting your gain staging instead of absolute dBFS targets. Plus 10 stem slots (room for a noise bed), feather-light Link senders (near-zero CPU), and single-master link consumption fixing shredded stem audio when multiple AURA instances coexist.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

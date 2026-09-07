@@ -1,5 +1,23 @@
 # AURA release notes
 
+## 3.4.0
+
+- **Balance mode**: mark a REF stem (typically the kick) and Auto-Mix
+  advice becomes relative to it - the anchor is never moved and every
+  other stem's target shifts to preserve your gain staging while matching
+  the genre's balance. The Auto-Mix panel shows which mode is active.
+- **10 stem slots** (up from 8): covers kick, snare, drum bus, sub, bass,
+  vocals, instruments, FX, noise bed, and a spare. Slots 9-10 are AURA
+  Link only (sidechain buses remain 8 for host compatibility).
+- **Feather-light senders**: "Send as" instances skip all analysis (no
+  FFT, LUFS, or oversampled true peak) - Relay-class CPU footprint.
+- **Single-master election**: exactly one master instance consumes the
+  link streams; additional master instances show a notice instead of
+  silently competing for the audio (the cause of missing stem spectrum
+  curves and unstable levels while setting up many instances).
+- Recommendation rows show ANCHOR on the REF stem; new automated tests
+  cover the link registry, master election, and balance math.
+
 ## 3.3.0
 
 The flagship release: per-stem analysis that actually works everywhere.

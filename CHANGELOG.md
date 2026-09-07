@@ -1,5 +1,32 @@
 # AURA release notes
 
+## 3.5.0
+
+The trust release - stem measurement rebuilt so what AURA shows matches
+what your EQ and your ears say.
+
+- Stem spectrum: 4096-point FFT per stem (was 1024 - at that resolution
+  a 200 Hz high-pass had ~4 bins below the cut and window leakage drew
+  phantom low-frequency energy). Curves now agree with Pro-Q/EQ Eight.
+- Stem analysis is TRUE STEREO end to end: per-channel FFTs power-combined
+  for the display, and levels measured as louder-channel peak + channel
+  power RMS. The old mono fold cancelled side content, under-reading wide
+  stems (vocals, big synths) by up to 10 dB - the primary source of
+  "turn UP something already blasting" Auto-Mix advice. AURA Link now
+  streams stereo; sidechain measurement fixed identically.
+- Percussive recommendations use a ~2 s rec-peak (hold + 6 dB/s decay)
+  instead of the 30 s display hold that pinned readings to the loudest
+  hit of half a minute ago.
+- Multi-solo: repeated S presses build a solo group on the spectrum
+  (kick + sub + bass to hunt low-end clashes); SHOW ALL restores.
+- Glass & Glow visual pass: vignette backdrop, gradient spectrum fill,
+  circular Mix Score dial, sharper high-quality logo rendering, embedded
+  brand typography (Space Grotesk), breathing status accents.
+- Window: free corner-drag resizing (aspect-locked, 40-150%); +/- buttons
+  still step presets; first launch opens at 75%.
+- Cleanup: Send MIDI Now only appears when a MIDI port exists (with
+  setup guidance otherwise); dead MaskingHeatmap component removed.
+
 ## 3.4.0
 
 - **Balance mode**: mark a REF stem (typically the kick) and Auto-Mix

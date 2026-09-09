@@ -1,5 +1,56 @@
 # AURA release notes
 
+## 3.6.0
+
+Pre-beta robustness pass - a four-front edge-case audit (Link lifecycle,
+host/audio, UI abuse, file/data inputs) with the real breakers fixed.
+
+Audio / host:
+- NaN/Inf sanitized at the analysis boundary: one broken upstream block
+  used to freeze LUFS, spectrum, and stem readings until reload.
+- releaseResources() now parks the analysis thread before resetting, so a
+  transport stop/unload can't race the gating-block vector (rare crash).
+- FFT state resets on sample-rate change (was carrying stale-rate windows).
+- Stem peak ballistics no longer scale with host buffer size; smoothed
+  EMAs self-heal from a NaN.
+- Offline bounces above ~10x realtime drop whole hops instead of splicing
+  discontinuous windows; rendered audio was and remains bit-identical.
+- Mono main-bus tracks are accepted (folded to both channels) instead of
+  AURA hiding from the insert list.
+
+AURA Link:
+- A bypassed/frozen/deactivated master no longer holds the election
+  forever - the heartbeat is gated on recent audio, so a live master
+  takes over within ~3 s.
+- Vanished or slot-reused senders mark their stem inactive immediately
+  (generation + liveness checked on the drain thread), so Auto-Mix stops
+  advising on stale or mis-identified audio - works with the editor closed.
+- New senders flush buffered audio on assignment (no replay of old audio).
+- All-10-slots-in-use shows an explicit notice instead of a false
+  "SENDING"; duplicate same-type senders get distinct labels; a
+  user-typed label is never clobbered by auto-fill.
+
+UI / files:
+- Fixed a use-after-free when a reference load completed as the editor
+  closed; reference results delivered on the message thread.
+- Reopening the editor during a Full-Track run no longer desyncs the
+  toggle (which could silently restart and wipe the run).
+- Unreadable/corrupt/empty dropped files show an explicit error; long
+  offline analyses show status; dropping during analysis no longer kills
+  a Full-Track run and does nothing.
+- 64-bit file lengths (8-hour / high-SR files no longer truncate to
+  garbage); mid-file read failures reported instead of analyzed as silence.
+- editor_zoom = nan/inf in project state no longer collapses the window.
+- UpdateChecker: bounded manifest read (no thread pinned by a stalled or
+  10 MB response); prerelease versions sort below their final release;
+  over-long release notes truncated.
+- Header brand pulse dot actually animates; clip-threshold widgets stay in
+  step when the host restores state with Settings open.
+
+Known limitations (documented, not bugs): two projects open in one DAW
+process share the Link registry (analyze one song at a time); analysis is
+meaningless during an offline bounce.
+
 ## 3.5.0
 
 The trust release - stem measurement rebuilt so what AURA shows matches

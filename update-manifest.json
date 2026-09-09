@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.5.0",
+  "latestVersion": "3.6.0",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.5.0 - the trust release: stem spectrum curves now match your EQ (4096-pt true-stereo analysis; the old 1024-pt mono fold painted phantom low end and under-read wide stems by up to 10 dB - the root of bad Auto-Mix advice). Plus multi-solo groups on the spectrum (kick+sub+bass together), the Glass & Glow visual pass with a Mix Score dial and free window resizing, and interface cleanup (Send MIDI Now hidden unless a port exists).",
+  "releaseNotes": "AURA 3.6.0 is a pre-beta robustness release: it now tolerates sample-rate changes, mono tracks, corrupt/8-hour files, faster-than-realtime bounces, and NaN from a broken upstream plugin (a single bad block no longer freezes the meters). AURA Link handles bypassed masters, vanished senders, slot exhaustion, and duplicate stems, and works with no editor open. Unreadable files and long analyses now give clear feedback.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

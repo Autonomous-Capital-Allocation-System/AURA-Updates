@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.6.0",
+  "latestVersion": "3.8.0",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.6.0 is a pre-beta robustness release: it now tolerates sample-rate changes, mono tracks, corrupt/8-hour files, faster-than-realtime bounces, and NaN from a broken upstream plugin (a single bad block no longer freezes the meters). AURA Link handles bypassed masters, vanished senders, slot exhaustion, and duplicate stems, and works with no editor open. Unreadable files and long analyses now give clear feedback.",
+  "releaseNotes": "AURA 3.8.0 is the stability and accuracy release: MIDI output is now strictly manual (arm + Send MIDI Now - analysis modes never move your faders), AURA Link routes with plugin windows closed and recovers automatically, spectra average true power (honest band advice on sparse content), all meters are sample-rate-consistent, Full Track reports count audio time instead of wall-clock, and advice only fires on fresh non-silent audio. Also new since 3.6: the STEM FIELD per-stem spectrum view (triple-click the Mix Score dial) and optional local AI via Ollama in Settings.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

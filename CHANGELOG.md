@@ -1,5 +1,69 @@
 # AURA release notes
 
+## 3.8.0
+
+The stability and accuracy release: an independent external code audit was
+verified finding-by-finding and fixed in one pass, plus everything from the
+unreleased 3.7 (STEM FIELD, local AI) rolled in.
+
+MIDI safety:
+- MIDI output is now strictly manual and off by default. Arm the new MIDI
+  toggle in the Auto-Mix tab (this opens the port), then click Send MIDI
+  Now. No analysis mode - One-Shot, Continuous, or Full Track - ever moves
+  DAW faders on its own (previously passive Continuous/Full Track passes
+  transmitted CC moves every 4 seconds to a mapped port).
+- Estimated (~) rows are never transmitted, and percussive sends now use
+  the same peak metric the advice was computed from (drum CCs were ~10 dB
+  off before).
+
+AURA Link:
+- Routing no longer needs a plugin window open: slot assignment, recovery
+  and election all run in the audio engine, so restored projects route
+  with editors closed, senders auto-recover when a slot frees, and a
+  vanished sender can no longer wedge a stem on a headless master.
+- Sender instances are now genuinely lightweight - no analysis, AI, or
+  snapshot work while sending.
+
+Accuracy:
+- Whole-track and reference spectra average true power instead of dB
+  (sparse content - hats, snare transients - no longer reads tens of dB
+  low, which was biasing genre band advice toward "add more highs").
+- Stem FFTs keep up at 88.2/96/192 kHz instead of silently analyzing
+  spliced audio; every meter ballistic is sample-rate-normalized so
+  44.1 kHz and 192 kHz sessions read identically.
+- Full Track reports count analyzed AUDIO time, not wall-clock time -
+  pausing the transport no longer dilutes passes, scores, or durations.
+- Long-file analysis is much faster (integrated-loudness gating was
+  re-scanning the whole file per hop; hour-long bounces were quadratic).
+- Advice (rules and local AI) only fires on fresh, non-silent audio - no
+  more EQ tips about audio that stopped playing, and no local-AI requests
+  from an idle session.
+
+Stability:
+- Fixed a use-after-free when closing the editor as a reference finished
+  loading, two data races (genre profile handoff, goniometer ring), a
+  30 fps analysis loop left running after the host released resources,
+  and a rare crash-on-close when an AI request was in flight (requests
+  are now properly cancelled instead of the thread being force-killed).
+- Settings and Report overlays are now truly modal: a full-window scrim
+  blocks the background and Escape closes them.
+- Project state restore is validated and bounded; only local/private-
+  network Ollama endpoints are re-applied automatically from project files.
+- macOS installer now actually removes legacy MixSenseAI copies on upgrade.
+
+From the unreleased 3.7:
+- STEM FIELD view (Deep Field): triple-click the Mix Score dial and switch
+  to the STEM FIELD tab - a SPAN-style overlay of your mapped stems'
+  smoothed spectra, color-matched to the main EQ. Click stem names to
+  solo/combine, hover for a frequency + nearest-note readout.
+- Local AI (optional): Settings exposes AI Mode + Ollama URL/model. Point
+  AURA at a local Ollama model for Tier-1 diagnostics and the STUDIO
+  assistant; nothing configured = the offline rules engine as before.
+  Cloud stays off until secure key storage ships.
+- Workflow: Auto-Mix is the first tab; a Check for Updates button sits in
+  the main UI; the stem-mapping preset/auto-detect controls (which could
+  overwrite careful manual mappings) were removed.
+
 ## 3.6.0
 
 Pre-beta robustness pass - a four-front edge-case audit (Link lifecycle,

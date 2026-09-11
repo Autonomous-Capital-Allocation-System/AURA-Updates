@@ -1,5 +1,30 @@
 # AURA release notes
 
+## 3.9.0
+
+Nested routing and trustworthy level control:
+- Every mapped node can name its immediate PARENT. Auto-Mix compares sibling
+  nodes within that scope, never a summed bus against audio already inside it.
+- Each scope can have its own REF. A hot or missing REF pauses only that scope;
+  unrelated parent/child scopes remain independent.
+- AURA Link senders have a built-in AURA Trim applied before both output and
+  measurement. Leave the DAW fader at unity and use Trim so advice follows the
+  exact signal change without an external Utility plug-in.
+- Persistent sender IDs reconnect rows by identity rather than editable names,
+  preserving parent and REF configuration across reloads.
+
+Genre instrument EQ guidance:
+- Triple-click Mix Score and open GENRE EQ GUIDE in Deep Field.
+- Select any mapped stem to see conservative instrument ranges and selected-
+  genre context for cleanup, foundation, masking, character, presence and air.
+- The guide is educational and contextual, not an automatic EQ recipe. AURA
+  never applies EQ or changes DAW controls.
+
+Release traceability:
+- The header shows the exact build identifier next to the version.
+- Windows and universal macOS installers are built only after unit tests and
+  platform plug-in validation pass.
+
 ## 3.8.0
 
 The stability and accuracy release: an independent external code audit was

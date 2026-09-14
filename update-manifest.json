@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.5",
+  "latestVersion": "3.9.6",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.5 is a workflow release. AURA Link sender instances now collapse to a small window with only their mode, Link Group, and measured AURA Trim, so ten senders no longer take over the arrange page; Expand restores the full UI and a Master instance is always full size. The Auto-Mix \"Measuring\" gate now counts audio time (~1.5 s) instead of analysis ticks, so a stem on a large DAW buffer reaches a recommendation instead of stalling on \"Measuring\". Includes the 3.9.4 recommendation-coherence fixes (balance vs headroom, HEADROOM vs CLIPPING, REFERENCE SET). Fully close the DAW before installing.",
+  "releaseNotes": "AURA 3.9.6 is a UX + workflow release. Deep Field opens on Stem Field, the Genre EQ Guide is readable and adds a whole-genre overview plus an in-view genre picker. Auto-Mix rows collapse so every stem fits without scrolling, the peak-ceiling preset has a clear RED active state, and a new one-click TRUE Auto-Mix applies the recommendations to each Link sender's built-in Trim (reversible; it adjusts AURA's own Trim, never a DAW fader). The spectrum legend moved to a top strip so it no longer collides with the curve. Settings now supports multiple AI providers (Anthropic, OpenAI, Groq, OpenRouter, Together, Ollama, LM Studio, or a Custom endpoint) with model, endpoint, API key and Test Connection; keys are stored on this machine only. Fully close the DAW before installing.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

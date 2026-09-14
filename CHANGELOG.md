@@ -1,5 +1,32 @@
 # AURA release notes
 
+## 3.9.6 - Deep Field, Auto-Mix workflow, multi-provider AI
+
+Deep Field:
+- Opens on STEM FIELD; tabs are STEM FIELD, GENRE EQ GUIDE, WATERFALL.
+- Genre EQ Guide text is readable at any window size, adds a whole-genre "ALL"
+  overview as the first entry, and has an in-view genre picker whose change
+  carries back to the main window and is saved with the project.
+
+Auto-Mix:
+- Recommendation rows are collapsible - every mapped stem fits without
+  scrolling; click a row for its Peak/target/RMS detail.
+- The peak-ceiling preset shows a clear RED active state; others are dimmed.
+- TRUE Auto-Mix: "Apply Auto-Mix" sets every mapped sender's built-in AURA Trim
+  to its recommendation in one move (from a stable Continuous read), so you hear
+  the result immediately. Reversible with Undo. It adjusts AURA's own Trim, never
+  a DAW fader; manual trimming still works.
+
+Spectrum:
+- The MIX / SIDE / TARGET and per-stem legend is a horizontal strip at the top,
+  so it no longer collides with the high-frequency curve.
+
+Settings - multi-provider AI:
+- Choose a provider (Anthropic, OpenAI, Groq, OpenRouter, Together AI, Ollama,
+  LM Studio, or a Custom OpenAI-compatible endpoint), a model, the endpoint and
+  an API key, and press Test Connection to confirm it. API keys are stored on
+  this machine only, never in your project file.
+
 ## 3.9.5 — workflow beta
 
 Compact sender window:

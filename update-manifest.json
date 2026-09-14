@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.2",
+  "latestVersion": "3.9.3",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.2 is a focused Auto-Mix diagnostic beta. Copied AURA Link senders receive distinct identities, Stem Mapping shows sender audio age, frames received, and short identity, and Auto-Mix distinguishes a healthy-but-silent sender from stale sender audio, a missing REF, an unsafe REF, and active measurement. Recommendation safety uses current-window peaks instead of the historical display hold. Double-click the Mix Score to open Deep Field. This build is intended to verify the remaining Ableton signal-path behavior before broader refinement.",
+  "releaseNotes": "AURA 3.9.3 is a focused Kick measurement beta. Percussive hit peak is reserved for clipping and headroom safety, while program RMS drives the balance anchor. Continuous and Full Track averaging now includes time between percussive hits, preserving density. A hot but sub-zero Kick transient no longer freezes unrelated tonal-stem recommendations. Percussive REF rows show program RMS, its target, and hit peak for direct verification.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

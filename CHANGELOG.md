@@ -1,5 +1,16 @@
 # AURA release notes
 
+## 3.9.3 — Kick measurement beta
+
+- Separates Kick transient safety from musical-balance measurement: hit peak
+  remains visible for headroom, while program RMS drives a percussive REF.
+- Continuous and Full Track averaging includes the time between percussive
+  hits, so sparse and frequent Kicks no longer appear equivalent.
+- A hot but sub-zero Kick transient no longer freezes Bass, Vocal, or other
+  tonal recommendations. A genuine digital over still blocks its own scope.
+- Percussive REF rows expose program RMS, its target, and hit peak so the
+  behavior can be verified directly in a DAW.
+
 ## 3.9.2 — diagnostic beta
 
 - Adds a separate `Sender live - no signal` state, so a healthy sender carrying

@@ -1,5 +1,34 @@
 # AURA release notes
 
+## 3.9.4 — recommendation coherence beta
+
+Auto-Mix decision coherence (fixes the contradiction seen in the v3.9.3 Ableton
+test, where a Bass row read "Level is on target" beside a 6.6 dB target error):
+- Balance and headroom corrections are combined, never substituted. When balance
+  asks for attenuation the more conservative of the two wins; a raise is limited
+  by available peak headroom and vetoed when the peak is already over the
+  ceiling; the +/-12 dB display cap is applied last.
+- Every row states what drove it (balance, peak ceiling, both, REFERENCE SET,
+  measuring, stale, silent). Action text, badge and evidence always describe the
+  same decision. A headroom-limited raise too small to act on reads "Hold (no
+  safe raise)", never "on target".
+- Continuous smoothing never blends passes that were decided differently or in
+  opposite directions.
+- HEADROOM vs CLIPPING: the -6/-3/-1 dBFS presets are peak ceilings and show an
+  amber HEADROOM badge; red CLIPPING is reserved for a sample peak at or above
+  0 dBFS. Header alert, Full Track report and rules cards use the same words.
+- The REF row reads REFERENCE SET with the level it is held at; the genre figure
+  is advisory only. AURA never normalizes the anchor.
+
+Genre EQ Guide:
+- All 40 profiles now receive a workflow line (21 previously fell through), the
+  spectral-weighting branches are all reachable, INSTRUMENTS / DRUMS / BASS zone
+  data was corrected, and clicking inside the zone plot no longer closes the guide.
+
+Documentation:
+- Built-in AURA Trim is the preferred level workflow; a Utility/Gain device before
+  the sender is an optional alternative. Double-click wording is consistent.
+
 ## 3.9.3 — Kick measurement beta
 
 - Separates Kick transient safety from musical-balance measurement: hit peak
@@ -47,7 +76,7 @@ Nested routing and trustworthy level control:
   preserving parent and REF configuration across reloads.
 
 Genre instrument EQ guidance:
-- Triple-click Mix Score and open GENRE EQ GUIDE in Deep Field.
+- Double-click Mix Score and open GENRE EQ GUIDE in Deep Field.
 - Select any mapped stem to see conservative instrument ranges and selected-
   genre context for cleanup, foundation, masking, character, presence and air.
 - The guide is educational and contextual, not an automatic EQ recipe. AURA

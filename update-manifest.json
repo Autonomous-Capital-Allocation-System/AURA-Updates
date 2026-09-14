@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.3",
+  "latestVersion": "3.9.4",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.3 is a focused Kick measurement beta. Percussive hit peak is reserved for clipping and headroom safety, while program RMS drives the balance anchor. Continuous and Full Track averaging now includes time between percussive hits, preserving density. A hot but sub-zero Kick transient no longer freezes unrelated tonal-stem recommendations. Percussive REF rows show program RMS, its target, and hit peak for direct verification.",
+  "releaseNotes": "AURA 3.9.4 corrects the Auto-Mix decision model: balance and peak-headroom corrections are combined, never substituted, so a peak slightly over the selected ceiling can no longer turn a large balance correction into \"Level is on target\". Every row states what drove it, and action text, badge and evidence always agree. HEADROOM (over the -6/-3/-1 dBFS ceiling) is now distinct from CLIPPING (at or above 0 dBFS). The REF row reads REFERENCE SET with its held level. The Genre EQ Guide gives every profile a workflow line with corrected zone data. Also includes the 3.9.1-3.9.3 sender diagnostics and sparse-kick program-RMS reference work. Fully close the DAW before installing.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

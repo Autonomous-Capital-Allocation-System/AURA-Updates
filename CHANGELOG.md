@@ -1,5 +1,20 @@
 # AURA release notes
 
+## 3.9.1 — diagnostic beta
+
+- Copied AURA Link instances can no longer remain live under the same sender
+  identity; the later copy receives a distinct identity.
+- Stem Mapping now shows each linked sender's audio age, frames drained in the
+  latest analysis tick, and short identity for direct troubleshooting.
+- Auto-Mix explicitly distinguishes stale sender audio, a missing REF, an
+  unsafe REF, and active measurement instead of calling every state Listening.
+- The long historical display peak no longer drives Auto-Mix clipping or gain
+  safety decisions; current-window peak measurements are used instead.
+- Double-click the Mix Score to open Deep Field, including Waterfall, Stem
+  Field, and Genre EQ Guide.
+- This is an evidence-gathering beta. Downstream nested-bus compensation has
+  not been claimed or added; the telemetry is intended to prove that path first.
+
 ## 3.9.0
 
 Nested routing and trustworthy level control:

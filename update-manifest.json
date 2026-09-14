@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.0",
+  "latestVersion": "3.9.1",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.0 introduces a universal nested-routing workflow: map each track or bus as a node, assign its immediate PARENT, and choose one REF per sibling scope. Auto-Mix never compares a summed parent against its child audio, and a hot or missing REF pauses only its own scope. Sender instances now include a built-in measured AURA Trim, and persistent sender identities prevent row/REF drift after reloads. Deep Field adds a Genre EQ Guide with instrument-specific cleanup, masking, character, presence, and air ranges adapted to the selected genre. Guidance is advisory; AURA does not apply EQ or move DAW controls.",
+  "releaseNotes": "AURA 3.9.1 is a focused Auto-Mix diagnostic beta. Copied AURA Link senders now receive distinct identities, the Stem Mapping screen shows sender audio age, frames received, and short identity, and Auto-Mix distinguishes stale sender audio, a missing REF, an unsafe REF, and active measurement. Recommendation safety now uses current-window peaks instead of the historical display hold. Double-click the Mix Score to open Deep Field. This build is intended to verify the remaining Ableton signal-path behavior before broader refinement.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

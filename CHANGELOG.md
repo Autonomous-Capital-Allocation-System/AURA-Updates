@@ -1,5 +1,12 @@
 # AURA release notes
 
+## 3.9.2 — diagnostic beta
+
+- Adds a separate `Sender live - no signal` state, so a healthy sender carrying
+  silence is not confused with a sender that stopped delivering audio frames.
+- Includes all v3.9.1 identity, freshness, current-peak, telemetry, and
+  double-click diagnostic changes.
+
 ## 3.9.1 — diagnostic beta
 
 - Copied AURA Link instances can no longer remain live under the same sender

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.4",
+  "latestVersion": "3.9.5",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.4 corrects the Auto-Mix decision model: balance and peak-headroom corrections are combined, never substituted, so a peak slightly over the selected ceiling can no longer turn a large balance correction into \"Level is on target\". Every row states what drove it, and action text, badge and evidence always agree. HEADROOM (over the -6/-3/-1 dBFS ceiling) is now distinct from CLIPPING (at or above 0 dBFS). The REF row reads REFERENCE SET with its held level. The Genre EQ Guide gives every profile a workflow line with corrected zone data. Also includes the 3.9.1-3.9.3 sender diagnostics and sparse-kick program-RMS reference work. Fully close the DAW before installing.",
+  "releaseNotes": "AURA 3.9.5 is a workflow release. AURA Link sender instances now collapse to a small window with only their mode, Link Group, and measured AURA Trim, so ten senders no longer take over the arrange page; Expand restores the full UI and a Master instance is always full size. The Auto-Mix \"Measuring\" gate now counts audio time (~1.5 s) instead of analysis ticks, so a stem on a large DAW buffer reaches a recommendation instead of stalling on \"Measuring\". Includes the 3.9.4 recommendation-coherence fixes (balance vs headroom, HEADROOM vs CLIPPING, REFERENCE SET). Fully close the DAW before installing.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

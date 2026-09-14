@@ -1,5 +1,22 @@
 # AURA release notes
 
+## 3.9.5 — workflow beta
+
+Compact sender window:
+- An AURA Link sender (any "Send as" instance) now opens as a small window with
+  only the controls a sender needs: its mode, its Link Group, and the measured
+  AURA Trim. Ten senders no longer take over the arrange page.
+- Expand restores the full UI for routing help; senders reopen compact, and a
+  Master instance is always full size.
+
+Measurement no longer stalls on large buffers:
+- The Auto-Mix "Measuring" gate now counts audio time (about 1.5 s) instead of
+  analysis ticks, so a stem on a large DAW buffer reaches a recommendation
+  instead of sitting on "Measuring" indefinitely. The row shows a live percent.
+
+Includes everything in 3.9.4 (recommendation coherence, HEADROOM vs CLIPPING,
+REFERENCE SET, Genre EQ Guide fixes).
+
 ## 3.9.4 — recommendation coherence beta
 
 Auto-Mix decision coherence (fixes the contradiction seen in the v3.9.3 Ableton

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.8",
+  "latestVersion": "3.9.9",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.8: Auto-Mix recommendations now fill the tab as an even two-column grid so every mapped stem is visible without scrolling (click any row for its Peak/target/RMS detail). A Reset Layout button in Settings restores the draggable panel sizes to their defaults. New opt-in AURA Assist applies a gentle corrective EQ to the master output: one-click Match to Target nudges the 8 EQ bands toward the selected genre's target curve, with a wet/dry mix and a Flat reset. Assist is OFF by default - AURA does not touch your audio unless you enable it, and it processes on the Master instance only. Fully close the DAW before installing.",
+  "releaseNotes": "AURA 3.9.9: frequency diagnostic cards now have a working APPLY EQ button - one click applies that card's gentle EQ move to the master AURA Assist EQ (turns Assist on; reversible with Flat), shown only on cards that carry an EQ move. The Apply Auto-Mix button now explains why it is unavailable (enable Continuous, building the average, or all stems on target) instead of just greying out. Apply Auto-Mix (level trims to your senders) and AURA Assist (master EQ) are separate, independent features. Fully close the DAW before installing.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

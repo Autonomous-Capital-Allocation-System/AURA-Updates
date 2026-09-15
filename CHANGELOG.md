@@ -1,5 +1,15 @@
 # AURA release notes
 
+## 3.9.9 - Apply EQ from a card, clearer Apply Auto-Mix
+
+- Frequency diagnostic cards now have a working "APPLY EQ" button: one click
+  applies that card's gentle EQ move to the master AURA Assist EQ (turns Assist
+  on; reversible with Flat). Shown only on cards that carry an EQ move.
+- The Apply Auto-Mix button now explains why it is unavailable (enable
+  Continuous, building the average, or all stems already on target) instead of
+  just greying out. Apply Auto-Mix (level trims to your senders) and AURA
+  Assist (master EQ) are separate, independent features.
+
 ## 3.9.8 - Two-column Auto-Mix, Reset Layout, AURA Assist
 
 - Auto-Mix recommendations fill the tab as an even two-column grid, so every

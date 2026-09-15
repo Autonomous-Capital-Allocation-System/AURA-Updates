@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.6",
+  "latestVersion": "3.9.7",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.6 is a UX + workflow release. Deep Field opens on Stem Field, the Genre EQ Guide is readable and adds a whole-genre overview plus an in-view genre picker. Auto-Mix rows collapse so every stem fits without scrolling, the peak-ceiling preset has a clear RED active state, and a new one-click TRUE Auto-Mix applies the recommendations to each Link sender's built-in Trim (reversible; it adjusts AURA's own Trim, never a DAW fader). The spectrum legend moved to a top strip so it no longer collides with the curve. Settings now supports multiple AI providers (Anthropic, OpenAI, Groq, OpenRouter, Together, Ollama, LM Studio, or a Custom endpoint) with model, endpoint, API key and Test Connection; keys are stored on this machine only. Fully close the DAW before installing.",
+  "releaseNotes": "AURA 3.9.7 makes the main window resizable. Two drag handles let you rebalance the layout: drag the handle between the spectrum and the meters to shrink the Stereo/LUFS/Dynamics row and see more of the spectrum and Diagnostics cards; drag the handle between the 8-band EQ row and the tabs to shrink the EQ tiles and see more of the Auto-Mix / stem list without scrolling. Both section sizes are saved with the project. Fully close the DAW before installing.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

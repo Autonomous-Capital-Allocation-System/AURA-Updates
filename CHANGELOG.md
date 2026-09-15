@@ -1,5 +1,14 @@
 # AURA release notes
 
+## 3.9.7 - Resizable layout
+
+- Two drag handles rebalance the main window. Drag the handle between the
+  spectrum and the meters to shrink the Stereo/LUFS/Dynamics row and see more
+  of the spectrum and Diagnostics cards. Drag the handle between the 8-band EQ
+  row and the tabs to shrink the EQ tiles and see more of the Auto-Mix / stem
+  list without scrolling.
+- Both section sizes are saved with the project.
+
 ## 3.9.6 - Deep Field, Auto-Mix workflow, multi-provider AI
 
 Deep Field:

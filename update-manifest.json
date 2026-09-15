@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.7",
+  "latestVersion": "3.9.8",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.7 makes the main window resizable. Two drag handles let you rebalance the layout: drag the handle between the spectrum and the meters to shrink the Stereo/LUFS/Dynamics row and see more of the spectrum and Diagnostics cards; drag the handle between the 8-band EQ row and the tabs to shrink the EQ tiles and see more of the Auto-Mix / stem list without scrolling. Both section sizes are saved with the project. Fully close the DAW before installing.",
+  "releaseNotes": "AURA 3.9.8: Auto-Mix recommendations now fill the tab as an even two-column grid so every mapped stem is visible without scrolling (click any row for its Peak/target/RMS detail). A Reset Layout button in Settings restores the draggable panel sizes to their defaults. New opt-in AURA Assist applies a gentle corrective EQ to the master output: one-click Match to Target nudges the 8 EQ bands toward the selected genre's target curve, with a wet/dry mix and a Flat reset. Assist is OFF by default - AURA does not touch your audio unless you enable it, and it processes on the Master instance only. Fully close the DAW before installing.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
   "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
 }

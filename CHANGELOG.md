@@ -1,5 +1,17 @@
 # AURA release notes
 
+## 3.9.8 - Two-column Auto-Mix, Reset Layout, AURA Assist
+
+- Auto-Mix recommendations fill the tab as an even two-column grid, so every
+  mapped stem is visible without scrolling. Click any row for its Peak/target/
+  RMS detail.
+- Reset Layout button in Settings restores the draggable panel sizes to default.
+- AURA Assist (opt-in master Target EQ): turn on "Assist EQ (master)" and AURA
+  applies a gentle corrective EQ to the master output. "Match to Target" nudges
+  the 8 EQ bands toward the selected genre's target curve in one click, with a
+  wet/dry mix and a Flat reset. OFF by default - AURA does not touch your audio
+  unless you enable it, and it processes on the Master instance only.
+
 ## 3.9.7 - Resizable layout
 
 - Two drag handles rebalance the main window. Drag the handle between the

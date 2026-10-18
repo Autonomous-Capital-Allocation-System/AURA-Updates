@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "product": "AURA",
-  "latestVersion": "3.9.9",
+  "latestVersion": "3.9.10",
   "minimumSupportedVersion": "3.0.0",
-  "releaseNotes": "AURA 3.9.9: frequency diagnostic cards now have a working APPLY EQ button - one click applies that card's gentle EQ move to the master AURA Assist EQ (turns Assist on; reversible with Flat), shown only on cards that carry an EQ move. The Apply Auto-Mix button now explains why it is unavailable (enable Continuous, building the average, or all stems on target) instead of just greying out. Apply Auto-Mix (level trims to your senders) and AURA Assist (master EQ) are separate, independent features. Fully close the DAW before installing.",
+  "releaseNotes": "AURA 1.0.0 is here (the first full release; it follows the 3.9.x betas): code-signed installers, updates that install from inside the plug-in, license activation and a new user guide. Download and install AURA 1.0.0 from the release page. Fully close the DAW before installing.",
   "releaseNotesUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/blob/main/CHANGELOG.md",
-  "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA/releases"
+  "downloadPageUrl": "https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/releases/tag/v1.0.0"
 }

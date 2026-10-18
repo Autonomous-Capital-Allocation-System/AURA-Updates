@@ -1,5 +1,14 @@
 # AURA release notes
 
+## 1.0.0 - First full release (2026-10-18)
+
+- Follows the 3.9.x betas; projects saved with a beta open unchanged.
+- Code-signed installers (Windows Authenticode; macOS Developer ID + notarized).
+- Updates that download and install from inside the plug-in (signed update notice).
+- Free trial with no time limit; a license unlocks the actions that change your audio.
+- Compact AURA Link sender window, more cloud AI providers, new user guide.
+- Download: https://github.com/Autonomous-Capital-Allocation-System/AURA-Updates/releases/tag/v1.0.0
+
 ## 3.9.9 - Apply EQ from a card, clearer Apply Auto-Mix
 
 - Frequency diagnostic cards now have a working "APPLY EQ" button: one click
